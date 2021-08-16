@@ -1,0 +1,191 @@
+# main starship config
+scan_timeout = 10
+command_timeout = 100
+format = """
+$python\
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$cmd_duration\
+$shlvl\
+$line_break\
+$status\
+$character"""
+
+
+[aws]
+disabled = true
+
+[battery]
+disabled = true
+
+[character]
+success_symbol = "[:❯](bold cyan) "
+error_symbol = "[:❮](bold red) "
+
+[cmake]
+disabled = true
+
+[cmd_duration]
+#disabled = true
+
+[conda]
+symbol = " "
+#disabled = true
+
+[crystal]
+disabled = true
+
+[dart]
+symbol = " "
+disabled = true
+
+[deno]
+disabled = true
+
+[directory]
+read_only = " "
+
+[docker_context]
+symbol = " "
+
+[dotnet]
+disabled = true
+
+[elixir]
+disabled = true
+
+[elm]
+disabled = true
+
+[env_var]
+disabled = true
+
+[erlang]
+disabled = true
+
+[gcloud]
+disabled = true
+
+[git_branch]
+symbol = " "
+
+[golang]
+symbol = " "
+disabled = true
+
+[helm]
+disabled = true
+
+[hostname]
+style = "bold green"
+ssh_only = false
+format =  "[@$hostname]($style):"
+
+[hg_branch]
+disabled = true
+
+[java]
+style = "bold red"
+disabled = true
+
+[jobs]
+disabled = true
+
+[julia]
+disabled = true
+
+[kotlin]
+disabled = true
+
+[kubernetes]
+disabled = true
+
+[lua]
+disabled = true
+
+[nim]
+disabled = true
+
+[nix_shell]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[ocaml]
+disabled = true
+
+[openstack]
+disabled = true
+
+[package]
+disabled = true
+
+[perl]
+disabled = true
+
+[php]
+symbol = " "
+
+[purescript]
+disabled = true
+
+[python]
+symbol = " "
+python_binary = []
+format = '''[(\($virtualenv\) 
+)](bold yellow)'''
+
+[rlang]
+disabled = true
+
+[red]
+disabled = true
+
+[ruby]
+disabled = true
+
+[rust]
+disabled = true
+
+[scala]
+disabled = true
+
+[shlvl]
+disabled = false
+
+[singularity]
+disabled = true
+
+[swift]
+disabled = true
+
+[terraform]
+disabled = true
+
+[username]
+style_user = "bold green"
+style_root = "red bold"
+format = "[$user]($style)"
+show_always = true
+
+[vagrant]
+disabled = true
+
+[vlang]
+disabled = true
+
+[vcsh]
+disabled = true
+
+[zig]
+disabled = true
+
+[custom]
+disabled = true
